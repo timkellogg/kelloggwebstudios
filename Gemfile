@@ -26,6 +26,13 @@ gem 'font-awesome-sass', '4.3.2.1'
 # Bootstrap 3: https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '3.3.4.1'
 
+# Social Media Buttons 
+gem 'shareable'
+
+# Forms, mail {
+gem 'mail_form', '~> 1.5.0.rc'
+gem 'simple_form', '~> 3.0.0.rc'
+
 group :development, :test do
   gem 'byebug', '4.0.5'
   gem 'web-console', '2.1.2'

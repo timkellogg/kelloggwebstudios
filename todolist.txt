@@ -1,0 +1,2 @@
+Need to add polyfill for older browser support for chart.js 
+ you can find at:  http://www.sitepoint.com/creating-beautiful-charts-chart-js/

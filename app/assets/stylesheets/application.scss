@@ -4,3 +4,116 @@
  *= require_self
  */
 @import "railsbricks_custom";
+
+$red: #ff0050;
+
+h1	{
+	text-align: center;
+	font-size: 3.2em;
+}
+
+.navbar {
+	background-color: white;
+	border: none;
+}
+
+.navbar .navbar-brand { 
+	color: $red;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.navbar .nav li a {
+	color: $red;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+#footer {
+	background-color: $red;
+	color: white;
+	font-weight: bold; 
+}
+
+/* page layout */
+
+html, 
+body,
+.container, {
+	width: 100%;
+}
+
+#wrap {
+	width: 100%;
+}
+
+#main-title-div {
+	min-height: 600px;
+}
+
+#skills-section {
+	min-height: 600px;
+	width: 100%;
+	color: white;
+}
+
+/* typography */
+
+#about {
+	margin-top: 10px;
+	font-style: italic;
+}
+
+/* effects */
+
+#sub-title-left,
+#sub-title-center,
+#sub-title-right,
+#about {
+	display: none;
+}
+
+
+blockquote {
+border:none;
+font-family:Georgia, "Times New Roman", Times, serif;
+margin-bottom:-30px;
+position: relative; 
+max-width: 400px; 
+    margin: 0 auto; 
+    padding-left: 0.4em; 
+}
+
+blockquote h3 {
+    font-size:21px;
+}
+
+blockquote h3:before { 
+    content: "\201C";
+    font-weight: bold;
+    font-size:100px;
+    color:$red;
+    position: absolute; 
+    top: -0.2em;
+    left: -0.5em; 
+    font-family: 'Georgia'; 
+} 
+blockquote h3:after { 
+    content: "\201D";
+    font-weight: bold;
+    font-size:100px;
+    color:$red;
+    position: absolute; 
+    bottom: -0.6em;
+    right: 0; 
+    font-family: 'Georgia'; 
+}
+
+ 
+
+
+
+
+
+
+

@@ -16,3 +16,5 @@
 //= require bootstrap 
 //= require analytics
 //= require common
+//= require Chart.min
+//= require Charts
