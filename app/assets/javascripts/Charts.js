@@ -1,74 +1,65 @@
 // This is where the skills charts are written
 
-var pieData = [
+// Doughnut Charts 
+var htmlDoughnutData = [
 	{
-		value: 300,
+		value: 85,
 		color:"#F7464A",
 		highlight: "#FF5A5E",
-		label: "Red"
+		label: "85%"
 	},
 	{
-		value: 50,
-		color: "#46BFBD",
-		highlight: "#5AD3D1",
-		label: "Green"
+		value: 15,
+		color: "#F8F8F8",
+		highlight: "#F8F8F8",
+		label: "a"
+	}
+
+];
+
+var javaqueryDoughnutData = [
+	{
+		value: 70,
+		color: "#F7464A",
+		highlight: "#F7464A",
+		label: "70%"
 	},
 	{
-		value: 100,
-		color: "#FDB45C",
-		highlight: "#FFC870",
-		label: "Yellow"
-	},
-	{
-		value: 40,
-		color: "#949FB1",
-		highlight: "#A8B3C5",
-		label: "Grey"
-	},
-	{
-		value: 120,
-		color: "#4D5360",
-		highlight: "#616774",
-		label: "Dark Grey"
+		value: 30,
+		color: "#F8F8F8",
+		highlight: "#F8F8F8",
+		label: "70%",
 	}
 ];
+
+var rubyRailsDoughnutData = [
+	{
+		value: 65,
+		color: "#F7464A",
+		highlight: "#F7464A",
+		label: "65%"
+	},
+	{
+		value: 35,
+		color: "#F8F8F8",
+		highlight: "#F8F8F8",
+		label: "35%",
+	}
+];
+
 window.onload = function(){
-	var ctx = document.getElementById("chart-skills").getContext("2d");
-	window.myPie = new Chart(ctx).Pie(pieData);
+	var ctx  = document.getElementById("chart-html").getContext("2d");
+	var ctx2 = document.getElementById("chart-javaquery").getContext("2d");
+	var ctx3 = document.getElementById("chart-rubyrails").getContext("2d");
+	window.myJavaqueryDoughnut = new Chart(ctx2).Doughnut(javaqueryDoughnutData, {responsive: true});
+	window.myHtmlDoughnut      = new Chart(ctx).Doughnut(htmlDoughnutData, {responsive : true});
+	window.myRubyRailsDoughnut = new Chart(ctx3).Doughnut(rubyRailsDoughnutData, {response: true}); 
 };
 
 
-// Doughnut Charts 
-
-
-var htmlData = [
-    {
-        value: 300,
-        color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Red"
-    },
-    {
-        value: 50,
-        color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Green"
-    },
-    {
-        value: 100,
-        color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Yellow"
-    }
-
-]
 
 
 
-window.onload = function(){
-	var html = document.getElementById("chart-html").getContext("2d");
-	window.myHTML = new Doughnut(html).Doughnut(htmlData);
-}
 
 
 

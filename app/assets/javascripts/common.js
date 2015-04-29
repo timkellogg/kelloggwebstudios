@@ -25,6 +25,20 @@ var ready = function() {
 	$("#hermosa-site").popover({ trigger: "hover focus" });
 	$("#roadtripit-site").popover({ trigger: "hover focus" });
 
+	//Progressbars
+    $("#progressbar-1").progressbar({
+      value: 33
+    });
+
+    $("#progressbar-2").progressbar({
+    	value: 67
+    });
+
+    $("#progressbar-3").progressbar({
+    	value: 100
+    });
+
+
 }
 
 

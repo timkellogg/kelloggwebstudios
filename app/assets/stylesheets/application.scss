@@ -47,17 +47,26 @@ body,
 	width: 100%;
 }
 
-#main-title-div {
+#main-title-section {
+	margin-top: 50px;
 	min-height: 600px;
 }
 
+#how-it-works-section {
+	min-height: 600px;
+
+}
 #skills-section {
 	min-height: 600px;
 	width: 100%;
-	color: white;
+	color: black;
 }
 
 /* typography */
+
+h3 {
+	font-size: 1.75em;
+}
 
 #about {
 	margin-top: 10px;
@@ -73,6 +82,10 @@ body,
 	display: none;
 }
 
+.label {
+	color: royalblue;
+	font-size: 1.125em;
+}
 
 blockquote {
 border:none;
@@ -111,8 +124,36 @@ blockquote h3:after {
 
  
 
+/* charts */
 
+canvas {
+	margin: auto;
+	border: 1px solid black;
+} 
 
+/* pictures */
+
+.img-center {
+	margin: 10px auto;
+}
+
+/*.img-label {
+	margin-top: 5px;
+	font-style: italic;
+	position: relative;
+	z-index: 1;
+}*/
+
+/*
+.img-label:before {
+  content : "";
+  position: absolute;
+  left    : 40;
+  bottom  : 50;
+  height  : 1px;
+  width   : 25%;  /* or 100px 
+  border-bottom: 1.25px solid $gray;
+}*/
 
 
 
