@@ -13,13 +13,6 @@ var ready = function() {
 		$('#fade-right').fadeIn();	
 	}, 4000 );
 
-	setTimeout(function() {
-		$('#fade-left').fadeOut();
-		$('#fade-center').fadeOut();
-		$('#fade-right').fadeOut();
-		$('#about').css('visibility', 'visible');
-		$('#me').css('visibility', 'visible');
-	}, 8000 );
 
 
 	//Popover

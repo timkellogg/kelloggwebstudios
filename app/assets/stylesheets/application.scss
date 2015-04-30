@@ -1,6 +1,7 @@
 /*
  * Overwritten by RailsBricks
  *
+ *= require jquery-ui
  *= require_self
  */
 @import "railsbricks_custom";
@@ -21,7 +22,8 @@ $red: #ff0050;
 h1	{
 	text-align: center;
 	font-size: 3.2em;
-	font-family: $font-family-sans-serif;
+	font-family: $font-family-title;
+	background-color: yellow;
 }
 
 .navbar {
@@ -53,10 +55,18 @@ html,
 body,
 .container, {
 	width: 100%;
+	margin: 0;
 }
+
+.col-sm-12 {
+	margin: 20px auto;
+	width: 100%;
+}
+
 
 #wrap {
 	width: 100%;
+	margin: 0;
 }
 
 #main-title-section {
@@ -85,9 +95,21 @@ body,
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+	background-size: cover;    
+    width: 100%;
+    color: white;
+    font-weight: bolder;
 }
 
 /* typography */
+
+h1, h2, h3, h4, h5, h6, p {
+	-webkit-font-smoothing: antialiased;
+}
+
+h2 {
+	color: $gray;
+}
 
 h3 {
 	font-size: 1.75em;
@@ -99,7 +121,7 @@ h3 {
 }
 
 p {
-	font-family: $font-family-serif;
+	font-family: $font-family-paragraph
 }
 
 .lead {
@@ -123,8 +145,8 @@ p {
 
 
 .label {
-	color: royalblue;
-	font-size: 1.125em;
+	color: $gray;
+	font-size: 1.4em;
 }
 
 blockquote {
@@ -167,14 +189,20 @@ blockquote h3:after {
 /* charts */
 
 canvas {
-	margin: auto;
-	border: 1px solid black;
+	margin-top: 5px;
+	margin-bottom: 5px;
 } 
+
 
 /* pictures */
 
 .img-center {
-	margin: 10px auto;
+	@extend .img-responsive;
+	margin: 0 auto;
+
+}
+.img-rounded {
+	max-height: 300px;
 }
 
 
