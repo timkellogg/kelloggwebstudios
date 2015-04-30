@@ -2,23 +2,24 @@ var ready = function() {
 
 	//Timeouts 
 	setTimeout(function() {
-		$('#sub-title-left').fadeIn();
+		$('#fade-left').fadeIn();
 	}, 2000 );
 	
 	setTimeout(function() {
-		$('#sub-title-center').fadeIn();
+		$('#fade-center').fadeIn();
 	}, 3000 );
 
 	setTimeout(function() {
-		$('#sub-title-right').fadeIn();	
+		$('#fade-right').fadeIn();	
 	}, 4000 );
 
 	setTimeout(function() {
-		$('#sub-title-left').fadeOut();
-		$('#sub-title-center').fadeOut();
-		$('#sub-title-right').fadeOut();
-		$('#about').fadeIn();
-	}, 6000 );
+		$('#fade-left').fadeOut();
+		$('#fade-center').fadeOut();
+		$('#fade-right').fadeOut();
+		$('#about').css('visibility', 'visible');
+		$('#me').css('visibility', 'visible');
+	}, 8000 );
 
 
 	//Popover

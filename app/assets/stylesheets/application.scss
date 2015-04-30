@@ -4,12 +4,24 @@
  *= require_self
  */
 @import "railsbricks_custom";
+@font-face {
+    font-family: 'SignifyLite';
+    src: url('signifylite-webfont.eot');
+    src: url('signifylite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('signifylite-webfont.woff') format('woff'),
+         url('signifylite-webfont.ttf') format('truetype'),
+         url('signifylite-webfont.svg#SignifyLite') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 $red: #ff0050;
 
 h1	{
 	text-align: center;
 	font-size: 3.2em;
+	font-family: $font-family-sans-serif;
 }
 
 .navbar {
@@ -50,6 +62,7 @@ body,
 #main-title-section {
 	margin-top: 50px;
 	min-height: 600px;
+
 }
 
 #how-it-works-section {
@@ -62,6 +75,18 @@ body,
 	color: black;
 }
 
+#projects-section {
+	min-height: 550px;
+}
+
+#contact-section {
+	min-height: 600px;
+	background-image: url('bgmac.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 /* typography */
 
 h3 {
@@ -69,18 +94,33 @@ h3 {
 }
 
 #about {
-	margin-top: 10px;
+	margin-top: 20px;
 	font-style: italic;
+}
+
+p {
+	font-family: $font-family-serif;
+}
+
+.lead {
+	font-style: italic;
+	color: $gray;
 }
 
 /* effects */
 
-#sub-title-left,
-#sub-title-center,
-#sub-title-right,
-#about {
+#fade-left,
+#fade-center,
+#fade-right,
+ {
 	display: none;
 }
+
+#about {
+	visibility: hidden;
+}
+
+
 
 .label {
 	color: royalblue;
@@ -88,11 +128,11 @@ h3 {
 }
 
 blockquote {
-border:none;
-font-family:Georgia, "Times New Roman", Times, serif;
-margin-bottom:-30px;
-position: relative; 
-max-width: 400px; 
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-bottom:-30px;
+	position: relative; 
+	max-width: 400px; 
     margin: 0 auto; 
     padding-left: 0.4em; 
 }
@@ -137,23 +177,11 @@ canvas {
 	margin: 10px auto;
 }
 
-/*.img-label {
-	margin-top: 5px;
-	font-style: italic;
-	position: relative;
-	z-index: 1;
-}*/
 
-/*
-.img-label:before {
-  content : "";
-  position: absolute;
-  left    : 40;
-  bottom  : 50;
-  height  : 1px;
-  width   : 25%;  /* or 100px 
-  border-bottom: 1.25px solid $gray;
-}*/
+#me {
+	visibility: hidden;
+	max-height: 300px;
+}
 
 
 
