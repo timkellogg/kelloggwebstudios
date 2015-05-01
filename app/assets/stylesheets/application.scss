@@ -26,11 +26,27 @@ h1	{
 	background-color: yellow;
 }
 
+/* navigation */
+
+
 .navbar {
 	background-color: white;
 	border: none;
 }
 
+.navbar-inverse a {
+	line-height: 20px;
+	position: relative;
+	display: inline-block;
+	padding: 13px 15px;
+	&:hover {
+		color: white;
+		background-color: black;
+		text-decoration: none;
+	}
+}
+
+.navbar-inverse a,
 .navbar .navbar-brand { 
 	color: $red;
 	font-weight: bold;
@@ -42,6 +58,13 @@ h1	{
 	font-weight: bold;
 	font-size: 1.4em;
 }
+
+.navbar-toggle {
+	background-color: $red;
+}
+
+
+/* footer */
 
 #footer {
 	background-color: $red;
@@ -91,14 +114,7 @@ body,
 
 #contact-section {
 	min-height: 600px;
-	background-image: url('bgmac.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-	background-size: cover;    
-    width: 100%;
-    color: white;
-    font-weight: bolder;
+
 }
 
 /* typography */
@@ -127,6 +143,7 @@ p {
 .lead {
 	font-style: italic;
 	color: $gray;
+	padding-top: 30px;
 }
 
 /* effects */
@@ -223,17 +240,56 @@ progress::-webkit-progress-value {
 
 .img-center {
 	@extend .img-responsive;
-	margin: 0 auto;
+	margin:  auto;
 
 }
+
+.img-project,
 .img-rounded {
-	max-height: 300px;
+	max-height: 290px;
 }
+
+.img-project:hover {
+	size: 1.1;
+	opacity: .8;
+	-moz-box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0 5px 5px #888;
+	box-shadow: 0 0 5px 5px #888;
+}
+
 
 
 #me {
 	visibility: hidden;
 	max-height: 300px;
+}
+
+
+/* form */
+
+form {
+	margin: 10px auto;
+	width: 100%;
+}
+.form-control {
+	margin: 5px auto;
+	max-width: 50%;
+	text-align: center;
+	display: block;
+}
+
+.form-group {
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.form-group button {
+	color: $red;
+	background-color: white;
+	&:hover {
+		color: white;
+		background-color: black;
+	}
 }
 
 

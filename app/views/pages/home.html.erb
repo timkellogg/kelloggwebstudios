@@ -8,18 +8,19 @@
 	<div class="row">
 		<div class="col-xs-4 text-center" id="fade-left" >
 			<h2 id="sub-title-left">Data-Driven</h2>
-			<p class="lead">I build sites for professionals with a focus on reliability, clarity and backed by Google Analytics so you'll always know what works and what doesn't.</p>
-			<%= image_tag("datadriven.png", alt: "Picture of an office building in New York", class: "img-responsive img-rounded img-center") %>
+
+			<%= image_tag("datadriven.png", alt: "Picture of a computer showing charts", class: "img-responsive img-rounded img-center") %>
+			<p class="lead">We build sites for professionals with a focus on reliability, clarity and our recommendations are backed by Google Analytics so you'll always know what works and what doesn't.</p>
 		</div>
 		<div class="col-xs-4 text-center" id="fade-center">
 			<h2 id="sub-title-center">Cutting-Edge</h2>
-			<p class="lead">I use the latest technologies to ensure your site gets blazing speed - and it does on all modern browsers.</p>
-			<%= image_tag("digital.jpeg", alt: "Picture of an office building in New York", class: "img-responsive img-rounded img-center") %>
+			<%= image_tag("digital.png", alt: "Picture of a modern looking website", class: "img-responsive img-rounded img-center") %>
+			<p class="lead">We use the latest technologies to ensure your site gets blazing speed - and it does so on all modern browsers.</p>
 		</div>
 		<div class="col-xs-4 text-center" id="fade-right">
 			<h2 id="sub-title-right">End-to-End Control</h2>
-			<p class="lead">I do whatever your business needs. No templates. No themes. All custom.</p>
 			<%= image_tag("solutions.png", alt: "Picture of an office building in New York", class: "img-responsive img-rounded img-center") %>
+			<p class="lead">We do whatever your business needs. No templates. No themes. Never.</p>
 		</div>
 	</div>
 	<div id="row">
@@ -43,13 +44,13 @@
 
 		<div class="col-xs-4 text-center">
 			<%= image_tag("step2pic.png", alt: "Picture of papers for planning", class: "img-responsive img-rounded img-center") %>
-			<p class="lead">I work to find the features that you want <br> and I will build a prototype.</p>
+			<p class="lead">We work to find the features that you want <br> and sketch a prototype.</p>
 			<progress max="100" value="80"></progress>
 		</div>
 
 		<div class="col-xs-4 text-center">
 
-			<%= image_tag("step3pic.png", alt: "Picture of computer", class: "img-responsive img-rounded img-center") %>
+			<%= image_tag("step3pic.png", alt: "Picture of computer", class: "img-responsive img-rounded img-center", id: "all-devices") %>
 			<p class="lead">If you don't like it, you move on!<br>If you do, the site is launched live on the web!</p>
 			<progress max="100" value="99"></progress>
 		</div>
@@ -57,7 +58,7 @@
 
 	<div class="row">
 		<div class="col-xs-12">
-			<h2 class="text-center">I build your site so it looks great <em>everywhere</em>, on <b>everything</b>.</h2>
+			<h2 class="text-center">We build your site so it looks great <em>everywhere</em>, on <b>everything</b>.</h2>
 			<%= image_tag("mockups.png", alt: "Picture of assorted devices", class: "img-responsive img-center") %> 
 		</div>
 	</div>
@@ -82,41 +83,57 @@
 	</div>
 
 	<div class="col-xs-4 text-center">
-		<h3>Backend Development</h3>
+		<h3>Back End Development</h3>
 		<canvas id="chart-rubyrails"></canvas>
 
 		<p class="label">Ruby on Rails</p>
 	</div>
 </div>
 
-<div id="projects-section">
+<div id="projects-section" class="container">
 	<h1>Projects</h1>
+
+
 
 	<!-- Hermosa Surf -->
 	<div class="col-xs-6 text-center">
-		<h3>Website 1</h3>
-		<img src="#" id="hermosa-site" class="img-responsive img-thumbnail" data-container="body" data-placement="left" data-content="A site built for a housing association">
+		<h3>Hermosa Surf</h3>
+		<%= link_to image_tag("hermosa.png", class: "img-responsive img-thumbnail img-center img-project"), "https://hermosa-surf.herokuapp.com/" %>
+		<p class="lead">This website is for a housing association.</p>
 	</div>
 
 
 	<!-- RoadTripIt.io -->
 	<div class="col-xs-6 text-center">
 		<h3>RoadTripIt.io</h3>
-		<img src="#" id="roadtripit-site" class="img-responsive img-thumbnail" data-container="body" data-html="true" data-placement="right" data-content="A social networking site for planning, creating, booking and sharing trips! Take a look" <a href="https://www.roadtripit.io></a>" >
+
+		<%= link_to image_tag("road.png", class: "img-responsive img-thumbnail img-center img-project"), "https://www.roadtripit.io/" %>
+		<p class="lead">RoadTripIt.io is a social networking site currently undergoing development. It is adding core features to allow users to share and create roadtrips!</p>
 	</div>
 
 </div>
 
-		<div id="me" class="col-xs-4 col-xs-offset-2 text-left">
-			<%= image_tag("me.png", alt: "Picture of the founder, Tim Kellogg", class: "img-responsive") %> 
-		</div>
 
 
-<div id="contact-section">
-	<h2 class="text-center">Contact Us</h2>
+<div id="contact-section" class="container">
+	<h1 class="text-center">Contact Us</h1>
+	<div class="col-xs-12">
+		<form action="MAILTO:kelloggwebstudio@gmail.com?subject=Website Question" name="email" method="post" enctype="text/plain">
+			<div class="form-group">
+				<input type="text" name="name" class="form-control" placeholder="Your Name">
+			</div>
+			<div class="form-group">
+				<input type="email" name="mail" class="form-control" placeholder="you@example.com">
+			</div>
+			<div class="form-group">
+				<textarea name="body" rows="5" class="form-control" placeholder="Leave a comment here"></textarea>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-default form-control">Send</button>
+			</div>
 
-	
-
+		</form>
+	</div>
 </div>
 
 

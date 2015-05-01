@@ -14,11 +14,6 @@ var ready = function() {
 	}, 4000 );
 
 
-
-	//Popover
-	$("#hermosa-site").popover({ trigger: "hover focus" });
-	$("#roadtripit-site").popover({ trigger: "hover focus" });
-
 }
 
 
