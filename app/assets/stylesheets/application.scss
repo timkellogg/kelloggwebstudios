@@ -1,7 +1,6 @@
 /*
  * Overwritten by RailsBricks
  *
- *= require jquery-ui
  *= require_self
  */
 @import "railsbricks_custom";
@@ -16,6 +15,8 @@
     font-style: normal;
 
 }
+
+/* custom colors */
 
 $red: #ff0050;
 
@@ -75,17 +76,15 @@ h1	{
 /* page layout */
 
 html, 
-body,
-.container, {
+body {
 	width: 100%;
 	margin: 0;
 }
 
-.col-sm-12 {
+.col-md-12 {
 	margin: 20px auto;
 	width: 100%;
 }
-
 
 #wrap {
 	width: 100%;
@@ -94,8 +93,7 @@ body,
 
 #main-title-section {
 	margin-top: 50px;
-	min-height: 600px;
-
+	min-height: 500px;
 }
 
 #how-it-works-section {
@@ -103,9 +101,12 @@ body,
 
 }
 #skills-section {
-	min-height: 600px;
+	min-height: 400px;
 	width: 100%;
 	color: black;
+	h3 {
+		margin-left: 20px;
+	}
 }
 
 #projects-section {
@@ -113,8 +114,7 @@ body,
 }
 
 #contact-section {
-	min-height: 600px;
-
+	max-height: 600px;
 }
 
 /* typography */
@@ -125,6 +125,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h2 {
 	color: $gray;
+
 }
 
 h3 {
@@ -137,7 +138,7 @@ h3 {
 }
 
 p {
-	font-family: $font-family-paragraph
+	font-family: $font-family-paragraph;
 }
 
 .lead {
@@ -146,61 +147,21 @@ p {
 	padding-top: 30px;
 }
 
+.secondary-heading {
+	font-size: 2em;
+	font-style: italic;
+	text-align: center;
+	margin-top: 150px;
+}
+
 /* effects */
 
 #fade-left,
 #fade-center,
-#fade-right,
- {
+#fade-right {
 	display: none;
+	margin-top: 10px;
 }
-
-#about {
-	visibility: hidden;
-}
-
-
-
-.label {
-	color: $gray;
-	font-size: 1.4em;
-}
-
-blockquote {
-	border:none;
-	font-family:Georgia, "Times New Roman", Times, serif;
-	margin-bottom:-30px;
-	position: relative; 
-	max-width: 400px; 
-    margin: 0 auto; 
-    padding-left: 0.4em; 
-}
-
-blockquote h3 {
-    font-size:21px;
-}
-
-blockquote h3:before { 
-    content: "\201C";
-    font-weight: bold;
-    font-size:100px;
-    color:$red;
-    position: absolute; 
-    top: -0.2em;
-    left: -0.5em; 
-    font-family: 'Georgia'; 
-} 
-blockquote h3:after { 
-    content: "\201D";
-    font-weight: bold;
-    font-size:100px;
-    color:$red;
-    position: absolute; 
-    bottom: -0.6em;
-    right: 0; 
-    font-family: 'Georgia'; 
-}
-
 
 /* charts and extras */
 
@@ -208,7 +169,6 @@ canvas {
 	margin-top: 5px;
 	margin-bottom: 5px;
 } 
-
 
 progress {
 	height: 10px;
@@ -226,7 +186,7 @@ progress::-webkit-progress-bar {
 /* Now the value part */
 progress::-webkit-progress-value {
 	border-radius: 50px;
-	background-color: blue;
+	background-color: yellow;
 }
 
 /* footer */
@@ -258,13 +218,6 @@ progress::-webkit-progress-value {
 }
 
 
-
-#me {
-	visibility: hidden;
-	max-height: 300px;
-}
-
-
 /* form */
 
 form {
@@ -274,8 +227,9 @@ form {
 .form-control {
 	margin: 5px auto;
 	max-width: 50%;
-	text-align: center;
 	display: block;
+	background-color: $red;
+	color: white;
 }
 
 .form-group {
@@ -284,13 +238,30 @@ form {
 }
 
 .form-group button {
-	color: $red;
+	color: black;
 	background-color: white;
 	&:hover {
 		color: white;
 		background-color: black;
 	}
 }
+
+/* media queries */
+
+
+@media(max-width:767px){
+	.img-center {
+		display: block;
+		float: none;
+		min-width: 250;
+	}
+	.form-control {
+		max-width: 100%;
+	}
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
 
 
 

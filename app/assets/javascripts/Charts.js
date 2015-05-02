@@ -1,10 +1,3 @@
-// This is where the skills charts are written
-
-// Bar Chart 
-
-
-
-
 // Doughnut Charts 
 var htmlDoughnutData = [
 	{
@@ -53,7 +46,6 @@ window.onload = function(){
 	window.myHtmlDoughnut      = new Chart(ctx).Doughnut(htmlDoughnutData, {responsive : true});
 	window.myJavaqueryDoughnut = new Chart(ctx2).Doughnut(javaqueryDoughnutData, {responsive: true});
 	window.myrubyRailsDoughnut = new Chart(ctx3).Doughnut(rubyRailsDoughnutData, {responsive: true});
-
 };
 
 

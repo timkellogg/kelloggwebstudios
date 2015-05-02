@@ -1,102 +1,96 @@
 <% title("Home Page") %>
 
 
-<div class="container" id="main-title-section">
+<div class="container-fluid" id="main-title-section">
 	<div class="row">
 		<h1 id="main-title">Kellogg Web Studio</h1>
 	</div>
 	<div class="row">
-		<div class="col-xs-4 text-center" id="fade-left" >
+		<div class="col-md-4 text-center" id="fade-left" >
 			<h2 id="sub-title-left">Data-Driven</h2>
 
 			<%= image_tag("datadriven.png", alt: "Picture of a computer showing charts", class: "img-responsive img-rounded img-center") %>
 			<p class="lead">We build sites for professionals with a focus on reliability, clarity and our recommendations are backed by Google Analytics so you'll always know what works and what doesn't.</p>
 		</div>
-		<div class="col-xs-4 text-center" id="fade-center">
+		<div class="col-md-4 text-center" id="fade-center">
 			<h2 id="sub-title-center">Cutting-Edge</h2>
 			<%= image_tag("digital.png", alt: "Picture of a modern looking website", class: "img-responsive img-rounded img-center") %>
 			<p class="lead">We use the latest technologies to ensure your site gets blazing speed - and it does so on all modern browsers.</p>
 		</div>
-		<div class="col-xs-4 text-center" id="fade-right">
+		<div class="col-md-4 text-center" id="fade-right">
 			<h2 id="sub-title-right">End-to-End Control</h2>
 			<%= image_tag("solutions.png", alt: "Picture of an office building in New York", class: "img-responsive img-rounded img-center") %>
-			<p class="lead">We do whatever your business needs. No templates. No themes. Never.</p>
+			<p class="lead">We do build everything in-house and custom. We don't use themes - unless you want us too.</p>
 		</div>
 	</div>
-	<div id="row">
-		<div id="about" class="col-xs-3 col-xs-offset-3" >
-			<blockquote><h3 class="text-center">Hi, my name is Tim, President of Kellogg Web Studios. And I'm here because I would like to give your business a voice. In today's era, you can never be too prepared.</h3></blockquote>
-		</div>
 
-
-	</div>
 </div>
 
-<div class="container" id="how-it-works-section">
+<div class="container-fluid" id="how-it-works-section">
 	<div class="row">
 		<h1 class="text-center">Here's how it works</h1>	
-		<div class="col-xs-4 text-center">
-			<%= image_tag("step1pic.png", alt: "Picture of chat bubbles", class:  "img-responsive img-rounded img-center" ) %>
+	</div>
+		<div class="col-md-4 text-center">
+			<%= image_tag("meeting.png", alt: "Picture of chat bubbles", class:  "img-responsive img-rounded img-center" ) %>
 			<p class="lead">Free consultation to determine if your<br> needs can be fulfilled.</p>
 			<progress max="100" value="35"></progress>
 
 		</div>
 
-		<div class="col-xs-4 text-center">
-			<%= image_tag("step2pic.png", alt: "Picture of papers for planning", class: "img-responsive img-rounded img-center") %>
+		<div class="col-md-4 text-center">
+			<%= image_tag("idea.png", alt: "Picture of papers for planning", class: "img-responsive img-rounded img-center") %>
 			<p class="lead">We work to find the features that you want <br> and sketch a prototype.</p>
 			<progress max="100" value="80"></progress>
 		</div>
 
-		<div class="col-xs-4 text-center">
+		<div class="col-md-4 text-center">
 
-			<%= image_tag("step3pic.png", alt: "Picture of computer", class: "img-responsive img-rounded img-center", id: "all-devices") %>
-			<p class="lead">If you don't like it, you move on!<br>If you do, the site is launched live on the web!</p>
+			<%= image_tag("globe.png", alt: "Picture of computer", class: "img-responsive img-rounded img-center", id: "all-devices") %>
+			<p class="lead">If you like it, we launch it! If not, you get your $ back.</p>
 			<progress max="100" value="99"></progress>
 		</div>
-	</div>	
 
-	<div class="row">
-		<div class="col-xs-12">
-			<h2 class="text-center">We build your site so it looks great <em>everywhere</em>, on <b>everything</b>.</h2>
+		<hr>
+	
+
+	<div class="container-fluid">
+		<div class="row">
+			<h2 class="secondary-heading">When we're done with it, you'll have a site that looks great <em>everywhere</em>, on <b>everything</b>.</h2>
+		</div>
+		<div class="row">
 			<%= image_tag("mockups.png", alt: "Picture of assorted devices", class: "img-responsive img-center") %> 
 		</div>
 	</div>
 </div>
 
-<div class="container" id="skills-section">
+<div class="container-fluid" id="skills-section">
 
 	<h1>Skills</h1>
 	
-	<div class="col-xs-4 text-center">
+	<div class="col-md-4 text-center">
 		<h3>Front End Development</h3>
 		<canvas id="chart-javaquery"></canvas>
-
-		<p class="label">JavaScript and jQuery</p>
 	</div>
 	
 
-	<div class="col-xs-4 text-center">
+	<div class="col-md-4 text-center">
 		<h3>Design</h3>
 		<canvas id="chart-html"></canvas>
-		<p class="label">HTML and CSS</p>
 	</div>
 
-	<div class="col-xs-4 text-center">
+	<div class="col-md-4 text-center">
 		<h3>Back End Development</h3>
 		<canvas id="chart-rubyrails"></canvas>
-
-		<p class="label">Ruby on Rails</p>
 	</div>
 </div>
 
-<div id="projects-section" class="container">
+<div id="projects-section" class="container-fluid">
 	<h1>Projects</h1>
 
 
 
 	<!-- Hermosa Surf -->
-	<div class="col-xs-6 text-center">
+	<div class="col-md-6 text-center">
 		<h3>Hermosa Surf</h3>
 		<%= link_to image_tag("hermosa.png", class: "img-responsive img-thumbnail img-center img-project"), "https://hermosa-surf.herokuapp.com/" %>
 		<p class="lead">This website is for a housing association.</p>
@@ -104,7 +98,7 @@
 
 
 	<!-- RoadTripIt.io -->
-	<div class="col-xs-6 text-center">
+	<div class="col-md-6 text-center">
 		<h3>RoadTripIt.io</h3>
 
 		<%= link_to image_tag("road.png", class: "img-responsive img-thumbnail img-center img-project"), "https://www.roadtripit.io/" %>
@@ -115,9 +109,9 @@
 
 
 
-<div id="contact-section" class="container">
+<div id="contact-section" class="container-fluid">
 	<h1 class="text-center">Contact Us</h1>
-	<div class="col-xs-12">
+	<div class="col-md-12">
 		<form action="MAILTO:kelloggwebstudio@gmail.com?subject=Website Question" name="email" method="post" enctype="text/plain">
 			<div class="form-group">
 				<input type="text" name="name" class="form-control" placeholder="Your Name">
@@ -135,9 +129,6 @@
 		</form>
 	</div>
 </div>
-
-
-
 
 
 

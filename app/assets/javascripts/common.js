@@ -13,7 +13,16 @@ var ready = function() {
 		$('#fade-right').fadeIn();	
 	}, 4000 );
 
+	// Waypoints 
 
+	// var waypoint = new Waypoint({
+ //  		element: document.getElementById('skills-section'),
+ //  		handler: function() {
+ //    		$.getscript("Charts.js", function(){
+	// 			getCharts();
+	// 		});
+ //  		}
+	// })
 }
 
 

@@ -31,11 +31,14 @@ gem 'bootstrap-sass', '3.3.4.1'
 gem 'shareable'
 
 # Import jQuery UI
-gem 'jquery-ui-rails'
+
 
 # Forms, mail {
 gem 'mail_form', '~> 1.5.0.rc'
 gem 'simple_form', '~> 3.0.0.rc'
+
+# Meta-tags 
+gem 'metamagic'
 
 group :development, :test do
   gem 'byebug', '4.0.5'

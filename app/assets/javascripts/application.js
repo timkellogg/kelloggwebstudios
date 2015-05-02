@@ -12,10 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui
 //= require turbolinks
 //= require bootstrap 
 //= require analytics
 //= require common
 //= require Chart.min
 //= require Charts
+//= require noframework.waypoints.min

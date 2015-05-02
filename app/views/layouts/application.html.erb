@@ -2,12 +2,21 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title><%= @title || "Portfolio" %></title>
+  <title><%= "Kellogg Web Studio" %></title>
+
+  <%
+  meta title: "Kellogg Web Studio",
+       description: "A Los Angeles based web design and development company",
+       keywords: %w(freelance developer frontend backend)
+  %>
+
   <%= favicon_link_tag 'minime.png' %>
   <%= favicon_link_tag 'minime.png', rel: 'me', type: 'image/png' %>
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
+
 </head>
 <body>
   <div id="wrap">
